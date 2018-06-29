@@ -1,0 +1,267 @@
+Started GET "/" for 127.0.0.1 at 2018-06-29 20:10:35 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/sushant/.rvm/gems/ruby-2.4.0-rc1/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/sushant/.rvm/gems/ruby-2.4.0-rc1/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 126ms (Views: 3.9ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-29 20:10:38 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search/category" for 127.0.0.1 at 2018-06-29 20:26:14 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/search/category"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search/category" for 127.0.0.1 at 2018-06-29 20:27:34 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"search_term"=>"category"}
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/search/category" for 127.0.0.1 at 2018-06-29 20:27:58 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"search_term"=>"category"}
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started GET "/search/category?q=1" for 127.0.0.1 at 2018-06-29 20:29:07 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"q"=>"1", "search_term"=>"category"}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:33:58 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:54:12 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NameError (uninitialized constant ApplicationController::Codyssey):
+  
+app/controllers/application_controller.rb:7:in `search'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:54:31 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-29 20:54:33 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search" for 127.0.0.1 at 2018-06-29 20:54:38 +0545
+Processing by ApplicationController#search as HTML
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:56:50 +0545
+  
+ActionController::RoutingError (undefined local variable or method `response' for ApplicationController:Class
+Did you mean?  respond_to?):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<top (required)>'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:57:21 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 500 Internal Server Error in 33ms
+
+
+  
+NoMethodError (undefined method `json_response' for #<ApplicationController:0x007f88f8492838>):
+  
+app/controllers/application_controller.rb:16:in `search'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:58:54 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 500 Internal Server Error in 33ms
+
+
+  
+NoMethodError (undefined method `json_response' for #<ApplicationController:0x000000043b0a70>):
+  
+app/controllers/application_controller.rb:16:in `search'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 20:59:19 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 500 Internal Server Error in 33ms
+
+
+  
+NoMethodError (undefined method `json_response' for #<ApplicationController:0x000000041fa488>):
+  
+app/controllers/application_controller.rb:16:in `search'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 21:00:10 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 200 OK in 1ms (Views: 0.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-29 21:00:12 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 21:09:49 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 500 Internal Server Error in 52ms
+
+
+  
+NameError (undefined local variable or method `category' for #<ApplicationController:0x007f88e8006108>):
+  
+app/controllers/application_controller.rb:21:in `check_params'
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-29 21:09:51 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search?category=%22test%22&term=%22alu%22" for 127.0.0.1 at 2018-06-29 21:10:13 +0545
+Processing by ApplicationController#search as HTML
+  Parameters: {"category"=>"\"test\"", "term"=>"\"alu\""}
+Completed 200 OK in 0ms (Views: 0.1ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-06-29 21:10:15 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/search" for 127.0.0.1 at 2018-06-29 21:10:21 +0545
+Processing by ApplicationController#search as HTML
+Filter chain halted as :check_params rendered or redirected
+Completed 422 Unprocessable Entity in 0ms (Views: 0.1ms)
+
+
