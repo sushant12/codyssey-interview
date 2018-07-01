@@ -17,7 +17,8 @@ include Response
 	end
 
 	def check_search_params
-		unless params[:category] && params[:term]
+		not_valid_params = Search::SearchParamValidator.call(params)
+		if not_valid_params
 			json_response("Either category or term must be supplied", 422)
 		end
 	end
